@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__top__style {
+  height: 2px;
+  background-image: linear-gradient(to right, #ff005e, #771948);
+  /* background-image: linear-gradient(to right, #ff0069, #9a0766); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  width: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #818b99;
+  border: 3px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+body {
+  background-color: #faf6fa;
+}
+.app {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+}
+.app__left {
+  flex: 0.9;
+}
+.app__header__title {
+  font-size: 2.5rem;
+  color: #4b4f4f;
+  font-weight: 700;
+  font-family: sans-serif;
+  text-shadow: 0px 0px 1px;
+}
+.app__header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5px 10px 10px;
+}
+.app__status {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.countrywise__data__title {
+  font-size: 23px;
+  color: #616666;
+  margin: 3px;
+  padding: 5px;
+  border-bottom: 2px solid lightgray;
+}
+.countrywise__data {
+  border: 2px solid #dfdfeb;
+  background-image: linear-gradient(45deg, #ffe7e791, #fffafefa);
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 0px lightgreen;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 950px) {
+  .app {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media all and (max-width: 768px) {
+  .app__status {
+    flex-direction: column;
   }
 }

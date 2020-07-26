@@ -1,0 +1,17 @@
+.table tr:nth-child(even) {
+  background-color: rgb(213, 230, 247);
+}
+table {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: scroll;
+  margin: 3px 10px;
+}
+.table tr {
+  display: flex;
+  justify-content: space-between;
+}
+.table tr td {
+  padding: 4px;
+}

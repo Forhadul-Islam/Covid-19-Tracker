@@ -1,0 +1,39 @@
+.infoBox {
+  width: 240px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.infoBox__title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #716f6d;
+  text-shadow: 0px 0px 1px;
+}
+.infoBox__total {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #ec0d89;
+  font-weight: 600;
+}
+.infoBox__cases {
+  font-size: 30px;
+  color: #25a7d9;
+  margin: 5px 0;
+}
+
+@media all and (max-width: 768px) {
+  .infoBox {
+    width: 500px;
+    margin: auto;
+  }
+  .infoBox__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
