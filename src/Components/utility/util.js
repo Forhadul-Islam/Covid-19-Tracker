@@ -27,7 +27,7 @@ export const sortData = (data) => {
 
 //prEttyPrintState (formate the number)
 export const prettyPrintState = (state) => {
-  return state ? `${numeral(state).format("0.0a")}` : "---";
+  return state ? `${numeral(state).format("0.0a")}` : "00";
 };
 //DRAW circle on the map
 export const showDataOnMap = (data, casesType = "cases") =>

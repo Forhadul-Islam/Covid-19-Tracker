@@ -24,11 +24,10 @@ function App() {
   const [country, setCountry] = useState("Worldwide");
   const [countryInfo, setCountryInfo] = useState({});
   const [tableData, setTableData] = useState([]);
-  const [mapCenter, setMapCenter] = useState({ lat: 22.3569, lng: 91.7832 });
+  const [mapCenter, setMapCenter] = useState({ lat: 0, lng: 0 });
   const [mapZoom, setMapZoom] = useState(4);
   const [mapCountries, setMapCountries] = useState([]);
   const [casesType, setCasesType] = useState("cases");
-  console.log(casesType);
 
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/all")

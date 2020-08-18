@@ -52,7 +52,7 @@ function LineChart({ casesType }) {
     labels: [...lineChartLable],
     datasets: [
       {
-        label: casesType,
+        label: `Worldwide $mjv bxjn ,n,c {casesType}`,
         fill: true,
         lineTension: 0.1,
         backgroundColor: "rgba(75,192,192,0.4)",
